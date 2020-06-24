@@ -18,8 +18,8 @@ Call this function BEFORE EVERY SINGLE challenge number below, giving it the cha
 ### Numbered Challenges
 
 1. Write a function that prints the numbers from 1 to 5. Note that, since we're hard-coding our starting point (1) and our end point (5), no parameters are required! Now call it and observe your terminal. You should see 1 on the first line, then 2 on the second, and so on.
-2. **Did you remember to call your challenge banner printing function?** Call it before this next challenge, and go back and call it before the first one if you didn't already. Now! Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with 6 as the parameter.
-3. Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE.
+2. **Did you remember to call your challenge banner printing function?** Call it before this next challenge, and go back and call it before the first one if you didn't already. Now! Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with `6` as the parameter, and you should see 1, 2, 3, 4, 5, and 6 printed. Now call it with `3`, and you should see 1, 2, and 3 printed.
+3. Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE. Call it with `3` and `8` and you should see "3", "4", "5", "6", "7", and "8" printed. Now call it with `-2` and `1`. You should see "-2", "-1", "0", and "1" printed out.
 4. Write a function that prints the numbers from 1 to the number given, and then "Odd" if it's an odd number and "Even" if it's an even number, going through each number from 1 to whatever is passed in. Print that pair of things on one line or two--up to you! Call it with 5, and you should get something like:
 
 1 Odd
