@@ -21,22 +21,39 @@ Call this function BEFORE EVERY SINGLE challenge number below, giving it the cha
 2. **Did you remember to call your challenge banner printing function?** Call it before this next challenge, and go back and call it before the first one if you didn't already. Now! Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with 6 as the parameter.
 3. Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE.
 4. Write a function that prints the numbers from 1 to the number given, and then "Odd" if it's an odd number and "Even" if it's an even number, going through each number from 1 to whatever is passed in. Print that pair of things on one line or two--up to you! Call it with 5, and you should get something like:
+
 1 Odd
+
 2 Even
+
 3 Odd
+
 4 Even
+
 5 Odd
+
 Or, if you did it on two lines:
+
 1
+
 Odd
+
 2
+
 Even
+
 3
+
 Odd
+
 4
+
 Even
+
 5
+
 Odd
+
 5. Print the even numbers ONLY from 1 to whatever number is passed in (inclusive). Call it with 11, and make sure you're getting 2, 4, 6, 8, and 10 printed out!
 6. Write a function that prints the numbers from 10 to 1, in descending order. Now call it!
 7. Write a function that prints the numbers from 10 to 1, in descending order, followed by "Blast off!". Now call it!
