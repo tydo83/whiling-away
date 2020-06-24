@@ -73,4 +73,4 @@ Odd
 ### Challenge Challenges
 
 15. FizzBuzz! Write a function that takes in a number and prints EACH integer from 1 to that number, inclusive. If the number is divisible by 3, print "Fizz" instead of the number. If it's divisible by 5, print "Buzz" instead of the number. If it's divisible by both, print "FizzBuzz". Now call it with 15 and check the output.
-16. Fibonacci! Write a function that takes in a number and prints each Fibonacci number (starting with 1 and 1) from 1 to that number, inclusive.
+16. Fibonacci! Write a function that takes in a number and prints each Fibonacci number (starting with 1 and 1) from 1 to that number, inclusive. Call it with 21, and you should see the Fibonacci sequence up to and including 21 (1, 1, 2, 3, 5, 8, 13, 21).
