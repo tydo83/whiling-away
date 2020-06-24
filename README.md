@@ -67,7 +67,7 @@ Odd
 11. Write a function that takes in a string and a number and prints that string that number of times. Now call it with the parameters of "Good-bye..." and `4`, and then "Get out!" and `6`. You should see "Good-bye..." printed 4 times, followed by "Get out!" 6 times.
 12. Write a function that takes in a string and prints every character individually of that string. Then call it with "think". You should see the "t" printed on one line, then the "h" on the next line, and so on.
 13. Write a function that prints every OTHER character of its string parameter individually. Call it with "Nobody", and make sure you're printing "o", followed by "o", followed by "y".
-14. Write a function that prints a string backwards. Use a loop for this, NOT `.join`.
+14. Write a function that prints a string's individual characters backwards. Use a loop for this, NOT `.join`. Call it with 'Mesuara' and make sure it prints 'a' and then 'r' and then 'a' and then 'u' and… you get the idea.
 
 
 ### Challenge Challenges
