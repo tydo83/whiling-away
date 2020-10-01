@@ -2,25 +2,60 @@
 
 ### Setup
 
-For this exercise, we don't need to run tests. There arent' any! We will only use the command 
-`node main.js` in the terminal, and see what gets printed out. 
+This is a typical challenge, in that you'll fork and clone this repo and work in a file called `main.js`. But there are no tests and no app, as you'll see below!
 
 
-### Challenge Banner Challenge
+### Workflow
 
-Write a function that, given a number, prints a string in the following format, with `n` replaced by the given number:
+This is NOT a test-driven assignment, but we WILL be writing everything in functions. Then we will be calling each of those functions below their definition, so that when we run `node main.js` and execute the code, we can see what gets printed. Let's solve an imaginary first one together as an example!
 
-######### Challenge n #########
+When you're given the following instruction:
 
-Call this function BEFORE EVERY SINGLE challenge number below, giving it the challenge number you're currently on. So, for the first challenge, you'll give the function `1` and see `######### Challenge 1 #########` printed, and for the second, you'll give the function `2` and see `######### Challenge 2 #########` printed. This will give you a nice banner in your terminal to separate each challenge's results.
+"Challenge 0: write a function that loops from 1 to 3, printing each number."
+
+You would write the below code: 
+```javascript
+function challenge0() {
+    let num = 1;
+    while (num <= 3) {
+        console.log(num);
+        num= num + 1;
+    }
+}
+
+challenge0();
+```
+(Ignore the line with the word "javascript" on it if you're reading the straight markdown; together with the  surrounding triple backticks, that adds syntax coloration in the web version. Feel free to check out the README on GitHub to see!)
+
+Now when we call `node main.js` in our terminal, we'll see a 1 printed there, and then a 2, and then a 3.
+
+And that's how you'll do each of these challenges!
 
 
-### Numbered Challenges
+### A Note On Challenge Difficulty
 
-1. Write a function that prints the numbers from 1 to 5. Note that, since we're hard-coding our starting point (1) and our end point (5), no parameters are required! Now call it and observe your terminal. You should see 1 on the first line, then 2 on the second, and so on.
-2. **Did you remember to call your challenge banner printing function?** Call it before this next challenge, and go back and call it before the first one if you didn't already. Now! Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with `6` as the parameter, and you should see 1, 2, 3, 4, 5, and 6 printed. Now call it with `3`, and you should see 1, 2, and 3 printed.
+There are many challenges below, and they get very difficult. This is another assignment that is absolutely fantastic to return to if (when) you don't finish it. Do as many as you can! They each have variations on how to loop that will teach you something new.
+
+
+### Some Hints
+
+* Commenting out your previous function calls can help keep your terminal output readable and clean.
+* Feel free to jump around if you get stumped for too long on one. And research isn't cheating!
+* Pay careful attention to the parameters each function is being asked to take in, as well as each's example output.
+* When you get to some of the harder string challenges, remember that we can place any number into the square brackets after a string, and we will get back the single character at that index. That means a number that gets progressively higher (say... a variable in a loop!) will mean you can hit a higher-indexed character each time its value goes up.
+* You will have to combine your knowledge of if/else, parameters, and many more to fully complete this assignment.
+
+
+
+1) Write a function that prints the numbers from 1 to 5. Note that, since we're hard-coding our starting point (1) and our end point (5), no parameters are required!
+
+Example output:
+
+![numbers 1-5 printed out to a terminal](./assets/challenge-1.png)
+
+2. Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with `6` as the parameter, and you should see 1, 2, 3, 4, 5, and 6 printed. Now call it with `3`, and you should see 1, 2, and 3 printed.
 3. Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE. Call it with `3` and `8` and you should see "3", "4", "5", "6", "7", and "8" printed. Now call it with `-2` and `1`. You should see "-2", "-1", "0", and "1" printed out.
-4. Write a function that prints the numbers from 1 to the number given, and then "Odd" if it's an odd number and "Even" if it's an even number, going through each number from 1 to whatever is passed in. Print that pair of things on one line or two--up to you! Call it with 5, and you should get something like:
+4. Write a function that prints the numbers from 1 to the number given, and then, after each number, print "Odd" if it's an odd number and "Even" if it's an even number. Print that pair of things (number and odd/even string) on one line or split them between two--up to you! Call it with the parameter 5, and you should get something like:
 
 1 Odd
 
@@ -54,10 +89,10 @@ Even
 
 Odd
 
-5. Print the even numbers ONLY from 1 to whatever number is passed in (inclusive). Call it with 11, and make sure you're getting 2, 4, 6, 8, and 10 printed out!
+5. Print the even numbers ONLY from 1 to whatever number is passed in (inclusive). Call it with 10, and make sure you're getting 2, 4, 6, 8, and 10 printed out!
 6. Write a function that prints the numbers from 10 to 1, in descending order. Now call it!
 7. Write a function that prints the numbers from 10 to 1, in descending order, followed by "Blast off!". Now call it!
-8. Write a function that prints the numbers from the parameter given down to 1, in descending order, counting by 3s. Then call it with 20. You should see 20, 17, 14, 11, and so on. Do not print 1 or anything below it. Now call it!
+8. Write a function that prints the numbers from the parameter given down to 1, in descending order, counting by 3s. Then call it with 20. You should see 20, 17, 14, and so on, down to 2. It should not print 1 or anything below it. Now call it!
 
 
 ### String Challenges
@@ -72,5 +107,5 @@ Odd
 
 ### Challenge Challenges
 
-15. FizzBuzz! Write a function that takes in a number and prints EACH integer from 1 to that number, inclusive. If the number is divisible by 3, print "Fizz" instead of the number. If it's divisible by 5, print "Buzz" instead of the number. If it's divisible by both, print "FizzBuzz". Now call it with 15 and check the output.
-16. Fibonacci! Write a function that takes in a number and prints each Fibonacci number (starting with 1 and 1) from 1 to that number, inclusive. Call it with 21, and you should see the Fibonacci sequence up to and including 21 (1, 1, 2, 3, 5, 8, 13, 21).
+15. Actual for real FizzBuzz! Write a function that takes in a number and prints EACH integer from 1 to that number, inclusive. If the number is divisible by 3, print "Fizz" instead of the number. If it's divisible by 5, print "Buzz" instead of the number. If it's divisible by both, print "FizzBuzz". Now call it with 15 and check the output.
+16. Fibonacci! Write a function that takes in a number and prints each Fibonacci number (starting with 0 and 1) from 1 to that number, inclusive. Call it with 21, and you should see the Fibonacci sequence up to and including 21 (1, 1, 2, 3, 5, 8, 13, 21).
