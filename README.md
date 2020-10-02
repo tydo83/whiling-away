@@ -1,5 +1,19 @@
 # Whiling Away
 
+### Introduction
+
+Let's get loopy!
+
+We're going to write many, many loops together, my friend.
+
+![gif of the "This is the beginning of a beautiful friendship" scene from Casablanca](./assets/beautiful-friendship.gif)
+
+
+### Background
+
+Here's [a pretty thorough reading on while loops](https://www.javascripttutorial.net/javascript-while-loop/).
+
+
 ### Setup
 
 This is a typical challenge, in that you'll fork and clone this repo and work in a file called `main.js`. But there are no tests and no app, as you'll see below!
@@ -53,43 +67,43 @@ Example output:
 
 ![numbers 1-5 printed out to a terminal](./assets/challenge-1.png)
 
-2) Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with `6` as the parameter, and you should see 1, 2, 3, 4, 5, and 6 printed. Now call it with `3`, and you should see 1, 2, and 3 printed.
+2) Write a function that prints the numbers from `1` to whatever number is passed in as a parameter. Call your function with `6` as the parameter, and you should see 1, 2, 3, 4, 5, and 6 printed. Now call it with `3`, and you should see 1, 2, and 3 printed. HINT: you can check the value of a counter variable against the parameter you're taking in.
 
 Example output:
 
-![numbers 1-6 printed out to a termianl](./assets/challenge-2.png)
+![numbers 1-6 and 1-3 printed out to a terminal](./assets/challenge-2.png)
 
-3) Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE. Call it with `3` and `8` and you should see "3", "4", "5", "6", "7", and "8" printed. Now call it with `-2` and `1`. You should see "-2", "-1", "0", and "1" printed out.
-
-Example output:
-
-![numbers 3 through 8 printed out to a terminal](./assets/challenge-3.png)
-
-4) Write a function that prints the numbers from 1 to the number given, and then, after each number, print "Odd" if it's an odd number and "Even" if it's an even number. Print that pair of things (number and odd/even string) on one line or split them between two--up to you! Call it with the parameter 5, and you should get something like:
+3) Write a function that takes in two parameters and prints the numbers from the first to the second, INCLUSIVE. Call it with `3` and `8` as parameters, and then again with `-2` and `1`.
 
 Example output:
 
-![numbers with oddness printed out to ta terminal](./assets/challenge-4.png)
+![numbers 3 through 8 and -2 through 1 printed out to a terminal](./assets/challenge-3.png)
 
-5) Print the even numbers ONLY from 1 to whatever number is passed in (inclusive). Call it with 10, and make sure you're getting 2, 4, 6, 8, and 10 printed out!
+4) Write a function that prints the numbers from 1 to the number given, and then, after each number, print "Odd" if it's an odd number and "Even" if it's an even number. Print that pair of things (number and odd/even string) on one line or split them between two--up to you! Call it with the parameter 5. HINT: remember the modulus operation?
+
+Example output:
+
+![numbers with oddness printed out to the terminal](./assets/challenge-4.png)
+
+5) Print the even numbers ONLY from 1 to whatever number is passed in (inclusive). Call it with 10, and make sure you're getting 2, 4, 6, 8, and 10 printed out! HINT: you can use an `if` (or any other code!) within curly braces, whether it's a function or a loop.
 
 Example output:
 
 ![even numbers 1-10 printed out to a terminal](./assets/challenge-5.png)
 
-6) Write a function that prints the numbers from 10 to 1, in descending order. Now call it!
+6) Write a function that prints the numbers from 10 to 1, in descending order. Now call it! HINT: we can change a counter variable in any way we decide. It does not have to be just upping it by 1!
 
 Example output:
 
 ![numbers from 10 down to 1 printed out to a terminal](./assets/challenge-6.png)
 
-7) Write a function that prints the numbers from 10 to 1, in descending order, followed by "Blast off!". Now call it!
+7) Write a function that prints the numbers from 10 to 1, in descending order, followed by "Blast off!".
 
 Example output:
 
 ![numbers from 10 down to 1 printed out to a terminal, followed by "Blast Off!"](./assets/challenge-7.png)
 
-8) Write a function that prints the numbers from the parameter given down to 1, in descending order, counting by 3s. Then call it with 20. You should see 20, 17, 14, and so on, down to 2. It should not print 1 or anything below it. Now call it!
+8) Write a function that prints the numbers from the parameter given down to 1, in descending order, counting by 3s. Then call it with 20. You should see 20, 17, 14, and so on, down to 2. It should not print 1 or anything below it.
 
 Example output:
 
@@ -107,17 +121,17 @@ Example output:
 
 10). Write a function that prints in the same format as above, and also 7 times, but with a string passed in instead of a hard-coded "Hello!". Call it with the string of your choosing. You should see the same results as the previous challenge, but with the string you pass in instead of "Hello!".
 
-Example output:
+Example output (your string may vary!):
 
 ![numbered "hi"s printed out to a terminal](./assets/challenge-10.png)
 
-11). Write a function that takes in a string and a number and prints that string that number of times. Now call it with the parameters of "Good-bye..." and `4`, and then "Get out!" and `6`. You should see "Good-bye..." printed 4 times, followed by "Get out!" 6 times.
+11). Write a function that takes in a string AND a number and prints that string that number of times. Now call it with the parameters of "Good-bye..." and `4`, and then "Get out!" and `6`.
 
 Example output:
 
 !["Good-bye" printed four times and "Get out!" printed 6."](./assets/challenge-11.png)
 
-12). Write a function that takes in a string and prints every character individually of that string. Then call it with "think". You should see the "t" printed on one line, then the "h" on the next line, and so on.
+12). Write a function that takes in a string and prints every character individually of that string. Then call it with "think". HINT: remember, indices are just numbers! HINT 2: there's a property of any string that can tell you where to stop getting indices. But now these hints are getting a bit... lengthy.
 
 Example output:
 
@@ -129,7 +143,7 @@ Example output:
 
 !["o" and "o" and "y" printed out to a terminal](./assets/challenge-13.png)
 
-14). Write a function that prints a string's individual characters backwards. Use a loop for this, NOT `.join`. Call it with 'Mesuara' and make sure it prints 'a' and then 'r' and then 'a' and then 'u' and… you get the idea.
+14). Write a function that prints a string's individual characters backwards. Use a loop for this, NOT `.join`. Call it with 'Mesuara'.
 
 Example output:
 
@@ -145,7 +159,7 @@ Example output:
 
 ![the FizzBuzz numbers from 1 to 15 printed out to a terminal](./assets/challenge-15.png)
 
-16). Fibonacci! Write a function that takes in a number and prints each Fibonacci number (starting with 0 and 1) from 1 to that number, inclusive. Call it with 21, and you should see the Fibonacci sequence up to and including 21 (1, 1, 2, 3, 5, 8, 13, 21).
+16). [Fibonacci!](https://en.wikipedia.org/wiki/Fibonacci_number) Write a function that takes in a number and prints each Fibonacci number (starting with 0 and 1) from 1 to that number, inclusive. Call it with 21, and you should see the Fibonacci sequence up to and including 21 (1, 1, 2, 3, 5, 8, 13, 21).
 
 Example output:
 
